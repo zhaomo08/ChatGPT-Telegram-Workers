@@ -14,5 +14,5 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
-          apiToken: ${{ secrets.c1cf94b59c9898b930e7d9ee589cc7270496a }}
-          command: publish ./dist/index.js --name=${{ secrets.saymealoud }} --compatibility-date=2023-03-04
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: publish ./dist/index.js --name=${{ secrets.PROJECT_NAME }} --compatibility-date=2023-03-04
