@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/zhaomo0823@gmail.com
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           command: publish ./dist/index.js --name=${{ secrets.PROJECT_NAME }} --compatibility-date=2023-03-04
