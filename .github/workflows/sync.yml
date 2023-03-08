@@ -11,5 +11,5 @@ jobs:
             with:
             source_repo: 'https://github.com/TBXark/ChatGPT-Telegram-Workers'
             target_repo: '填写你的仓库地址‘
-            github_token: ${{ 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    }} 
+            github_token: ${{ secrets.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    }} 
             source_branch: 'master'
