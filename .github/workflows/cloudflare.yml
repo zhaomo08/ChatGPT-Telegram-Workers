@@ -15,4 +15,5 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: publish ./dist/index.js --name=${{ secrets.PROJECT_NAME }} --compatibility-date=2023-03-04
